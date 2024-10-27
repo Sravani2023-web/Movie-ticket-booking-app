@@ -1,0 +1,21 @@
+.payment {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto; /* Center the payment section */
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .payment h2 {
+    font-size: 2em; /* Larger font for emphasis */
+    margin-bottom: 15px;
+    color: #333; /* Dark color for text */
+  }
+  
+  .payment p {
+    font-size: 1.2em; /* Slightly larger font for additional instructions */
+    color: #555; /* Gray color for secondary text */
+  }
+  

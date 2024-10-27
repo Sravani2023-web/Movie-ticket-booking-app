@@ -1,0 +1,40 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the items */
+  gap: 20px; /* Space between each movie item */
+  padding: 20px;
+}
+
+.movie-list div {
+  width: 200px; /* Set a fixed width for each movie item */
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+.movie-list div:hover {
+  transform: scale(1.05); /* Slightly enlarge the movie item on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darken the shadow on hover */
+}
+
+.movie-list img {
+  width: 100%;
+  height: auto; /* Maintain the aspect ratio */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movie-list h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+
+  
+  

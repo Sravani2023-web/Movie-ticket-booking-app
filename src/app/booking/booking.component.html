@@ -1,0 +1,38 @@
+
+<div class="booking-container" *ngIf="selectedMovie; else noMovieTemplate">
+    <h2>Book Tickets for {{ selectedMovie.name }}</h2>
+    <div *ngIf="price !== undefined">{{ price.toFixed(2) }}</div>
+
+  
+    <h3>Select a Theater</h3>
+    <div *ngFor="let theater of theaters">
+      <h4>{{ theater.name }}</h4>
+      <h5>Show Times:</h5>
+      <ul>
+        <li *ngFor="let time of theater.showTimes">
+          <button (click)="selectShowTime(theater.id, time)">{{ time }}</button>
+        </li>
+      </ul>
+    </div>
+  
+    <div *ngIf="selectedTheater && selectedShowTime">
+      <h4>You have selected:</h4>
+      <p>Theater: {{ selectedTheater.name }}</p>
+      <p>Show Time: {{ selectedShowTime }}</p>
+    </div>
+    <div class="bookTicket">
+      <button (click)="bookTicket()" style="background-color: red;">Book Ticket</button>
+      </div>
+  </div>
+  
+  <ng-template #noMovieTemplate>
+    <p>Please select a movie to proceed.</p>
+  </ng-template>
+  
+  
+  
+  
+  
+  
+
+  

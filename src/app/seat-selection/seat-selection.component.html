@@ -1,0 +1,8 @@
+<!-- seat-selection.component.html -->
+ <div class="seat-selection">
+<h2>Select Your Seat</h2>
+<div *ngFor="let seat of seats">
+  <button (click)="selectSeat(seat.id)" [disabled]="!seat.available">{{ seat.number }}</button>
+</div>
+</div>
+

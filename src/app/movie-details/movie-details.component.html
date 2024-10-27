@@ -1,0 +1,14 @@
+<!-- movie-details.component.html -->
+ <div class="movie-details">
+<img [src]="movie.poster" alt="{{ movie.name }}">
+<h2>{{ movie.name }}</h2>
+<p>Rating: {{ movie.rating }}</p>
+<p>{{ movie.duration }}</p>
+<p>{{ movie.description }}</p>
+<p>{{ movie.genre }}</p>
+<button (click)="bookTicket()">Book Ticket</button>
+</div>
+
+  
+  
+  
